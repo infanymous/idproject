@@ -10,25 +10,54 @@ h1, h2, h3, h4, h5, h6, p, .navbar
 	font-family: 'Lato', sans-serif;
 }
 
-
-#background
+p 
 {
-	position: fixed;
-    width: 100%;
-    height: 100%;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-
-    opacity: 0.9;
-    filter:alpha(opacity=80);
+    margin: 0px !important;
+    padding: 0px;
 }
+
 
 #logo-section 
 {
-	margin-top: 5em;
-	height: 50%;
+    margin-top: 5em;
+    height: 50%;
+}
+
+.background1, .background2, .background3, .background4
+{     
+    height: 35em;
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.background1 
+{
+    background-image: url(./img/background1.png)
+}
+
+.background2 
+{
+    background-image: url(./img/background3.png)
+}
+
+.background3 
+{
+    background-image: url(./img/background4.png)
+}
+
+.background4 
+{
+    background-image: url(./img/background2.png)
+}
+
+.logoxd
+{
+    margin-top: 1em;
+    margin-left: 0em;
 }
 
 #footer-hr
@@ -50,26 +79,21 @@ h1, h2, h3, h4, h5, h6, p, .navbar
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.75), rgba(0,0,0, 0.75));
 }
 
-.col 
-{
-
-}
-
-.blank-section
-{
-	height: 25em;
-}
-
 
 .full-section 
 {
 	background-color: rgb(91, 91, 91);
 	color: white;
-	padding-top: 7em;
+	padding-top: 6em;
 	padding-bottom: 7em;
 
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+}
+
+.justified
+{
+    text-indent: 3em;
 }
 
 .footer-section
@@ -95,6 +119,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar
 	padding-right: 0;
 	overflow-x: hidden;
 }
+
 
 
 
@@ -146,4 +171,11 @@ h1, h2, h3, h4, h5, h6, p, .navbar
     background: url(idTRANSPORTY.jpg) left center no-repeat;
     border: 0;
 
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .background1, .background2, .background3, .background4 {
+    background-attachment: scroll;
+  }
 }
