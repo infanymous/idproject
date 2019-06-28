@@ -177,5 +177,6 @@ p
 @media only screen and (max-device-width: 1024px) {
   .background1, .background2, .background3, .background4 {
     background-attachment: scroll;
+    background-size: 100%;
   }
 }
